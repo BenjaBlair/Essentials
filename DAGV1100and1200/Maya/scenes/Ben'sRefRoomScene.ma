@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Ben'sRefRoomScene.ma
-//Last modified: Wed, Feb 25, 2026 03:13:20 PM
+//Last modified: Wed, Mar 04, 2026 03:01:12 PM
 //Codeset: 1252
 file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10932777/Documents/GitHub/Essentials/DAGV1100and1200/Maya//assets/Lamp.ma";
 file -rdi 1 -ns "BooksV2" -rfn "BooksV2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/10932777/Documents/GitHub/Essentials/DAGV1100and1200/Maya//assets/BooksV2.ma";
@@ -41,13 +41,13 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "CE00E762-4BF3-42BD-8EF4-9D8D3340E061";
+fileInfo "UUID" "C82A3F73-406F-FA76-6953-41BBB02BA6B6";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2930B9D5-42D4-994E-FBF5-9A9834D48D06";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 32.247940844184569 27.229473743534516 33.470716817656445 ;
-	setAttr ".r" -type "double3" -22.538352730378904 45.79999999999557 0 ;
+	setAttr ".t" -type "double3" 34.673400158885428 28.178143385759537 30.128885844098523 ;
+	setAttr ".r" -type "double3" -23.73835273036693 50.999999999992177 -2.5269757079991903e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "182E4F31-4A45-B20C-18B0-2791807A0A4D";
 	setAttr -k off ".v" no;
@@ -109,20 +109,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "37E3CC3E-4529-7E64-31CA-26995D2F5459";
+	rename -uid "EDBEC534-4F28-BB60-8037-18A438652359";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A3F07D4C-467E-B563-1178-C48D5B4893EF";
+	rename -uid "EA0891A6-4864-3748-1EDA-638191616E6B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "DAA153AF-4E9B-963C-6D80-66AA4280BAF6";
+	rename -uid "D7A51436-4339-3ACA-26B8-DCA5E52FB4EB";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "21C9E4BD-4D85-B8E1-768D-4AADE415C56B";
+	rename -uid "EBE35F7E-4418-8809-5D9D-0A9DCA2322E3";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "2DF0A2BD-4415-A137-9833-CAAB407CF548";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "BC135164-4920-63B7-21B7-8EBB2A0CC30E";
+	rename -uid "2280C178-4645-77F8-57CE-009AFDF9C209";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "26F7BBEE-4C9A-A4CE-B5D9-269C8EA25266";
 	setAttr ".g" yes;
@@ -183,7 +183,7 @@ createNode reference -n "LampRN";
 		"LampRN"
 		"LampRN" 0
 		"LampRN" 1
-		2 "|Lamp:New_LampBase" "translate" " -type \"double3\" -12.01643826399707571 6.51731157302856445 3.33997479615310944";
+		2 "|Lamp:New_LampBase" "translate" " -type \"double3\" -12.01643826399707571 6.51731157302856445 -0.92454073435746142";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BooksV2RN";
@@ -242,7 +242,7 @@ createNode reference -n "TableRN1";
 		"TableRN1"
 		"TableRN1" 0
 		"TableRN1" 1
-		2 "|Table1:Table" "translate" " -type \"double3\" 0.041374100026260408 0 6.55687004718783406";
+		2 "|Table1:Table" "translate" " -type \"double3\" -8.87502595452040843 0 2.36698507266083169";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Walls_FloorRN1";
@@ -258,7 +258,7 @@ createNode reference -n "OfficeChairRN1";
 		"OfficeChairRN1"
 		"OfficeChairRN1" 0
 		"OfficeChairRN1" 1
-		2 "|OfficeChair1:Chair" "translate" " -type \"double3\" -2.68799406941494645 0 6.55687004718783406";
+		2 "|OfficeChair1:Chair" "translate" " -type \"double3\" -8.85433201264803138 0 -4.2823444300470328";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "shopCabinetsRN";
@@ -317,7 +317,7 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 2 ".r";
+	setAttr -s 5 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
