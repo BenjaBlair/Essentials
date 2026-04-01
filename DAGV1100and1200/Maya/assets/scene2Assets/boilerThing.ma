@@ -1,10 +1,11 @@
 //Maya ASCII 2026 scene
 //Name: boilerThing.ma
-//Last modified: Wed, Apr 01, 2026 01:12:00 PM
+//Last modified: Wed, Apr 01, 2026 01:56:08 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
-requires "mtoa" "5.5.4.2";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
+		 "mtoa" "5.5.4.2";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -12,17 +13,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "F7E0B659-48E1-36CA-94D4-8AA77103D4C4";
+fileInfo "UUID" "F60F2C8C-459F-C873-FBDC-0CA6ABB9382F";
 createNode transform -s -n "persp";
 	rename -uid "A83891FF-47FC-D19E-5168-A3A19DB9DEE8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 72.337703562849867 59.247973377650595 92.660148951628827 ;
-	setAttr ".r" -type "double3" -21.338352731470525 396.59999999993505 -1.9808703595444862e-15 ;
+	setAttr ".t" -type "double3" 24.101706547050533 65.481824090248608 93.187221385214485 ;
+	setAttr ".r" -type "double3" -28.538352731459241 370.9999999999074 2.0250525957648941e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7CF2B9DA-4C19-B5A2-CBB8-31A2EF9C5EF7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 117.89918374527656;
+	setAttr ".coi" 102.84607088450036;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -4173,21 +4174,21 @@ createNode mesh -n "polySurfaceShape2" -p "sweep3";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "38E29866-454C-2989-9284-0EA6D2F07DE8";
+	rename -uid "4BE9296D-4DB0-0AF9-0FEE-9791F3505078";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "CBA24E56-4F20-51E5-C7AC-08B1284FB413";
+	rename -uid "4F8D3DBE-43A0-7D2B-1BD4-83B3E4F3C61F";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "37F22864-4155-D090-AF14-13BCCD0416D4";
+	rename -uid "C3FB44BC-4DAA-BBE4-0486-E299688D5AC6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "2FFB5397-4D45-0F7C-035B-979002B3A82C";
+	rename -uid "300CF471-4380-3A4A-99F2-2D97CC3320F0";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "71F10E6F-45F3-8FEA-2EC2-F8AA022A2955";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "EEA018FE-498A-4DBE-FA24-7B9325D19682";
+	rename -uid "D9F36170-4018-DA44-9B24-BC93BA3ACF15";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "CFC2F272-4E52-220F-D30B-66B37F551582";
 	setAttr ".g" yes;
@@ -4818,12 +4819,6 @@ createNode shadingEngine -n "lambert2SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo1";
 	rename -uid "6827CD51-4C81-72E5-9F48-51982CE1349A";
-createNode file -n "Blue_Hexagon_Plating_BaseColor_1";
-	rename -uid "6CD59965-40BF-4658-F644-BCA6E6411CD4";
-	setAttr ".ftn" -type "string" "C:/Users/benja/Downloads/2K_Blue_Hexagon_Plating-wda0xj/2K_Blue_Hexagon_Plating/Blue_Hexagon_Plating_BaseColor.png";
-	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
-createNode place2dTexture -n "place2dTexture1";
-	rename -uid "708325E6-4BEF-F03E-5273-2A9DECCBEB32";
 createNode lambert -n "lambert3";
 	rename -uid "3756F276-489D-3F1C-06FD-0D815B59AC82";
 createNode shadingEngine -n "lambert3SG";
@@ -4834,12 +4829,6 @@ createNode shadingEngine -n "lambert3SG";
 	setAttr -s 6 ".gn";
 createNode materialInfo -n "materialInfo2";
 	rename -uid "3964DEDD-480A-A840-7E27-49B0C76AAEA3";
-createNode file -n "Grid_Floor_BaseColor_1";
-	rename -uid "6C0E5348-4DE8-5FAE-1EFF-E293ED2C840A";
-	setAttr ".ftn" -type "string" "C:/Users/benja/Downloads/2K_Grid_Floor-u1q0zh/2K_Grid_Floor/Grid_Floor_BaseColor.png";
-	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
-createNode place2dTexture -n "place2dTexture2";
-	rename -uid "837CD688-431D-4C59-487E-4ABB7CBD2C96";
 createNode lambert -n "lambert4";
 	rename -uid "6774530D-4E8B-6B08-0B71-C892D38BCEB2";
 createNode shadingEngine -n "lambert4SG";
@@ -4848,24 +4837,6 @@ createNode shadingEngine -n "lambert4SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo3";
 	rename -uid "FB82965E-4740-CE22-56C4-73AC41429905";
-createNode file -n "Greeble_Pattern_BaseColor_1";
-	rename -uid "39592CC1-44F2-4BB0-CDFF-1BA7DC824A7C";
-	setAttr ".ftn" -type "string" "C:/Users/benja/Downloads/2K_Greeble_Pattern-dxmtsv/2K_Greeble_Pattern/Greeble_Pattern_BaseColor.png";
-	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
-createNode place2dTexture -n "place2dTexture3";
-	rename -uid "71988417-4AB8-5ED6-2DDA-8F82446F5679";
-createNode file -n "Dirty_Industrial_Wall_BaseColor_1";
-	rename -uid "D5153CCA-44D5-61C6-5BD3-899D42997F07";
-	setAttr ".ftn" -type "string" "C:/Users/benja/Downloads/2K_Dirty_Industrial_Wall-jrtitv/2K_Dirty_Industrial_Wall/Dirty_Industrial_Wall_BaseColor.png";
-	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
-createNode place2dTexture -n "place2dTexture4";
-	rename -uid "1301D478-450E-08BA-14CD-21AE01A58DCC";
-createNode file -n "Dirty_Industrial_Wall_Emissive_1";
-	rename -uid "8609B471-4169-09DA-0C22-F8A42109603C";
-	setAttr ".ftn" -type "string" "C:/Users/benja/Downloads/2K_Dirty_Industrial_Wall-jrtitv/2K_Dirty_Industrial_Wall/Dirty_Industrial_Wall_Emissive.png";
-	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
-createNode place2dTexture -n "place2dTexture5";
-	rename -uid "1ACF7773-43A0-E2FA-2DE2-F0BB09809E64";
 createNode lambert -n "lambert5";
 	rename -uid "9B54B68B-4D62-6B3A-3338-F581795E3199";
 createNode shadingEngine -n "lambert5SG";
@@ -5133,66 +5104,99 @@ createNode groupParts -n "groupParts7";
 createNode groupId -n "groupId18";
 	rename -uid "088E1BD1-4AAE-46A9-DA86-709851F940B1";
 	setAttr ".ihi" 0;
+createNode file -n "Dirty_Industrial_Wall_BaseColor_1";
+	rename -uid "089F8BAA-447F-2C67-C1ED-DEA8C979BA24";
+	setAttr ".ftn" -type "string" "C:/Users/benja/Documents/GitHub/Essentials/DAGV1100and1200/Maya//images/2K_Dirty_Industrial_Wall-jrtitv/2K_Dirty_Industrial_Wall/Dirty_Industrial_Wall_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
+createNode place2dTexture -n "place2dTexture4";
+	rename -uid "FB23D79A-4B44-AA93-12CB-4BA151C03EA0";
+createNode file -n "Greeble_Pattern_BaseColor_1";
+	rename -uid "34FE66B9-481B-4FD9-73A5-27B999CCF990";
+	setAttr ".ftn" -type "string" "C:/Users/benja/Documents/GitHub/Essentials/DAGV1100and1200/Maya//images/2K_Greeble_Pattern-dxmtsv/2K_Greeble_Pattern/Greeble_Pattern_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
+createNode place2dTexture -n "place2dTexture5";
+	rename -uid "61A067C3-4B63-322A-B482-BF9628594AED";
+createNode file -n "Blue_Hexagon_Plating_BaseColor_1";
+	rename -uid "72D91C89-4F53-E8CB-89F1-6D9B92CE6FA4";
+	setAttr ".ftn" -type "string" "C:/Users/benja/Documents/GitHub/Essentials/DAGV1100and1200/Maya//images/2K_Blue_Hexagon_Plating-wda0xj/2K_Blue_Hexagon_Plating/Blue_Hexagon_Plating_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
+createNode place2dTexture -n "place2dTexture6";
+	rename -uid "BF3ADE73-4916-9044-36B3-F6BA782C4081";
+createNode file -n "Grid_Floor_BaseColor_1";
+	rename -uid "49C0A4B5-4983-487F-D77D-B18E625E00AA";
+	setAttr ".ftn" -type "string" "C:/Users/benja/Documents/GitHub/Essentials/DAGV1100and1200/Maya//images/2K_Grid_Floor-u1q0zh/2K_Grid_Floor/Grid_Floor_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
+createNode place2dTexture -n "place2dTexture7";
+	rename -uid "C61A4CCF-438D-EEE4-4A11-EB995DD42DA1";
+createNode aiOptions -s -n "defaultArnoldRenderOptions";
+	rename -uid "4898F67E-4CBE-C853-E0A5-689E9C928F09";
+	setAttr ".version" -type "string" "5.5.4.2";
+createNode aiAOVFilter -s -n "defaultArnoldFilter";
+	rename -uid "0259A39C-48A4-B637-CFAF-5B906A43F065";
+	setAttr ".ai_translator" -type "string" "gaussian";
+createNode aiAOVDriver -s -n "defaultArnoldDriver";
+	rename -uid "6C81455B-42E7-2318-3E5F-DEAF8881A446";
+	setAttr ".ai_translator" -type "string" "exr";
+createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
+	rename -uid "8136582E-4F99-0F3A-34D0-169D54265987";
+	setAttr ".ai_translator" -type "string" "maya";
+	setAttr ".output_mode" 0;
+createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
+	rename -uid "8D1B6C79-4BF7-53FA-A324-2BB992C5C4D0";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "B68B1B52-417E-107C-E937-8E85780259CF";
+	rename -uid "C5603C4F-4963-5F03-4F66-F89FD4FAB367";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -2038.8130366435867 -1423.084100478151 ;
-	setAttr ".tgi[0].vh" -type "double2" 2166.5439391076802 315.75511614087071 ;
-	setAttr -s 18 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 535.98663330078125;
-	setAttr ".tgi[0].ni[0].y" 221.64682006835938;
+	setAttr ".tgi[0].vl" -type "double2" -1574.448601183969 -1132.998249901678 ;
+	setAttr ".tgi[0].vh" -type "double2" 958.23919877452659 -376.1494009756521 ;
+	setAttr -s 16 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -549.0364990234375;
+	setAttr ".tgi[0].ni[0].y" -1065.6243896484375;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -103.24047088623047;
-	setAttr ".tgi[0].ni[1].y" -490.52325439453125;
+	setAttr ".tgi[0].ni[1].x" 412.16860961914062;
+	setAttr ".tgi[0].ni[1].y" -112.06245422363281;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 357.14285278320312;
-	setAttr ".tgi[0].ni[2].y" -483.33331298828125;
+	setAttr ".tgi[0].ni[2].x" 210.66287231445312;
+	setAttr ".tgi[0].ni[2].y" -980.9454345703125;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" -27.108583450317383;
-	setAttr ".tgi[0].ni[3].y" 82.361106872558594;
+	setAttr ".tgi[0].ni[3].x" 357.14285278320312;
+	setAttr ".tgi[0].ni[3].y" -483.33331298828125;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" -85.450416564941406;
-	setAttr ".tgi[0].ni[4].y" -119.20531463623047;
+	setAttr ".tgi[0].ni[4].x" 137.05859375;
+	setAttr ".tgi[0].ni[4].y" -477.15240478515625;
 	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" 202.2808837890625;
-	setAttr ".tgi[0].ni[5].y" 257.57986450195312;
+	setAttr ".tgi[0].ni[5].x" -450.934814453125;
+	setAttr ".tgi[0].ni[5].y" -420.21923828125;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
-	setAttr ".tgi[0].ni[6].x" -116.70968627929688;
-	setAttr ".tgi[0].ni[6].y" -794.26336669921875;
+	setAttr ".tgi[0].ni[6].x" -10.76569652557373;
+	setAttr ".tgi[0].ni[6].y" -960.3424072265625;
 	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" 412.16860961914062;
-	setAttr ".tgi[0].ni[7].y" -112.06245422363281;
+	setAttr ".tgi[0].ni[7].x" 535.98663330078125;
+	setAttr ".tgi[0].ni[7].y" 221.64682006835938;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
-	setAttr ".tgi[0].ni[8].x" 352.33792114257812;
-	setAttr ".tgi[0].ni[8].y" -768.0728759765625;
+	setAttr ".tgi[0].ni[8].x" 757.41522216796875;
+	setAttr ".tgi[0].ni[8].y" 221.64682006835938;
 	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" -19.147682189941406;
-	setAttr ".tgi[0].ni[9].y" 257.57986450195312;
-	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" 135.71427917480469;
-	setAttr ".tgi[0].ni[10].y" -483.33331298828125;
+	setAttr ".tgi[0].ni[9].x" 219.94718933105469;
+	setAttr ".tgi[0].ni[9].y" 144.43571472167969;
+	setAttr ".tgi[0].ni[9].nvs" 1939;
+	setAttr ".tgi[0].ni[10].x" -106.55693817138672;
+	setAttr ".tgi[0].ni[10].y" 160.91815185546875;
 	setAttr ".tgi[0].ni[10].nvs" 1923;
-	setAttr ".tgi[0].ni[11].x" -350.04302978515625;
-	setAttr ".tgi[0].ni[11].y" -808.549072265625;
+	setAttr ".tgi[0].ni[11].x" 100.44950103759766;
+	setAttr ".tgi[0].ni[11].y" -146.06729125976562;
 	setAttr ".tgi[0].ni[11].nvs" 1923;
-	setAttr ".tgi[0].ni[12].x" 135.9781494140625;
-	setAttr ".tgi[0].ni[12].y" -119.20531463623047;
+	setAttr ".tgi[0].ni[12].x" -327.60794067382812;
+	setAttr ".tgi[0].ni[12].y" -1065.6243896484375;
 	setAttr ".tgi[0].ni[12].nvs" 1923;
-	setAttr ".tgi[0].ni[13].x" 130.90934753417969;
-	setAttr ".tgi[0].ni[13].y" -768.0728759765625;
+	setAttr ".tgi[0].ni[13].x" -120.97907257080078;
+	setAttr ".tgi[0].ni[13].y" -146.06729125976562;
 	setAttr ".tgi[0].ni[13].nvs" 1923;
 	setAttr ".tgi[0].ni[14].x" 633.59716796875;
 	setAttr ".tgi[0].ni[14].y" -112.06245422363281;
 	setAttr ".tgi[0].ni[14].nvs" 1923;
-	setAttr ".tgi[0].ni[15].x" 757.41522216796875;
-	setAttr ".tgi[0].ni[15].y" 221.64682006835938;
+	setAttr ".tgi[0].ni[15].x" -173.0450439453125;
+	setAttr ".tgi[0].ni[15].y" -402.74313354492188;
 	setAttr ".tgi[0].ni[15].nvs" 1923;
-	setAttr ".tgi[0].ni[16].x" 194.31999206542969;
-	setAttr ".tgi[0].ni[16].y" 82.361106872558594;
-	setAttr ".tgi[0].ni[16].nvs" 1923;
-	setAttr ".tgi[0].ni[17].x" -353.2900390625;
-	setAttr ".tgi[0].ni[17].y" -527.56219482421875;
-	setAttr ".tgi[0].ni[17].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 71;
 	setAttr ".unw" 71;
@@ -5211,10 +5215,10 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 5 ".u";
+	setAttr -s 4 ".u";
 select -ne :defaultRenderingList1;
 select -ne :defaultTextureList1;
-	setAttr -s 5 ".tx";
+	setAttr -s 4 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -5340,31 +5344,6 @@ connectAttr "groupId2.msg" "lambert2SG.gn" -na;
 connectAttr "lambert2SG.msg" "materialInfo1.sg";
 connectAttr "lambert2.msg" "materialInfo1.m";
 connectAttr "Blue_Hexagon_Plating_BaseColor_1.msg" "materialInfo1.t" -na;
-connectAttr ":defaultColorMgtGlobals.cme" "Blue_Hexagon_Plating_BaseColor_1.cme"
-		;
-connectAttr ":defaultColorMgtGlobals.cfe" "Blue_Hexagon_Plating_BaseColor_1.cmcf"
-		;
-connectAttr ":defaultColorMgtGlobals.cfp" "Blue_Hexagon_Plating_BaseColor_1.cmcp"
-		;
-connectAttr ":defaultColorMgtGlobals.wsn" "Blue_Hexagon_Plating_BaseColor_1.ws";
-connectAttr "place2dTexture1.c" "Blue_Hexagon_Plating_BaseColor_1.c";
-connectAttr "place2dTexture1.tf" "Blue_Hexagon_Plating_BaseColor_1.tf";
-connectAttr "place2dTexture1.rf" "Blue_Hexagon_Plating_BaseColor_1.rf";
-connectAttr "place2dTexture1.mu" "Blue_Hexagon_Plating_BaseColor_1.mu";
-connectAttr "place2dTexture1.mv" "Blue_Hexagon_Plating_BaseColor_1.mv";
-connectAttr "place2dTexture1.s" "Blue_Hexagon_Plating_BaseColor_1.s";
-connectAttr "place2dTexture1.wu" "Blue_Hexagon_Plating_BaseColor_1.wu";
-connectAttr "place2dTexture1.wv" "Blue_Hexagon_Plating_BaseColor_1.wv";
-connectAttr "place2dTexture1.re" "Blue_Hexagon_Plating_BaseColor_1.re";
-connectAttr "place2dTexture1.of" "Blue_Hexagon_Plating_BaseColor_1.of";
-connectAttr "place2dTexture1.r" "Blue_Hexagon_Plating_BaseColor_1.ro";
-connectAttr "place2dTexture1.n" "Blue_Hexagon_Plating_BaseColor_1.n";
-connectAttr "place2dTexture1.vt1" "Blue_Hexagon_Plating_BaseColor_1.vt1";
-connectAttr "place2dTexture1.vt2" "Blue_Hexagon_Plating_BaseColor_1.vt2";
-connectAttr "place2dTexture1.vt3" "Blue_Hexagon_Plating_BaseColor_1.vt3";
-connectAttr "place2dTexture1.vc1" "Blue_Hexagon_Plating_BaseColor_1.vc1";
-connectAttr "place2dTexture1.o" "Blue_Hexagon_Plating_BaseColor_1.uv";
-connectAttr "place2dTexture1.ofs" "Blue_Hexagon_Plating_BaseColor_1.fs";
 connectAttr "Grid_Floor_BaseColor_1.oc" "lambert3.c";
 connectAttr "lambert3.oc" "lambert3SG.ss";
 connectAttr "sweepShape3.iog.og[0]" "lambert3SG.dsm" -na;
@@ -5382,28 +5361,6 @@ connectAttr "groupId17.msg" "lambert3SG.gn" -na;
 connectAttr "lambert3SG.msg" "materialInfo2.sg";
 connectAttr "lambert3.msg" "materialInfo2.m";
 connectAttr "Grid_Floor_BaseColor_1.msg" "materialInfo2.t" -na;
-connectAttr ":defaultColorMgtGlobals.cme" "Grid_Floor_BaseColor_1.cme";
-connectAttr ":defaultColorMgtGlobals.cfe" "Grid_Floor_BaseColor_1.cmcf";
-connectAttr ":defaultColorMgtGlobals.cfp" "Grid_Floor_BaseColor_1.cmcp";
-connectAttr ":defaultColorMgtGlobals.wsn" "Grid_Floor_BaseColor_1.ws";
-connectAttr "place2dTexture2.c" "Grid_Floor_BaseColor_1.c";
-connectAttr "place2dTexture2.tf" "Grid_Floor_BaseColor_1.tf";
-connectAttr "place2dTexture2.rf" "Grid_Floor_BaseColor_1.rf";
-connectAttr "place2dTexture2.mu" "Grid_Floor_BaseColor_1.mu";
-connectAttr "place2dTexture2.mv" "Grid_Floor_BaseColor_1.mv";
-connectAttr "place2dTexture2.s" "Grid_Floor_BaseColor_1.s";
-connectAttr "place2dTexture2.wu" "Grid_Floor_BaseColor_1.wu";
-connectAttr "place2dTexture2.wv" "Grid_Floor_BaseColor_1.wv";
-connectAttr "place2dTexture2.re" "Grid_Floor_BaseColor_1.re";
-connectAttr "place2dTexture2.of" "Grid_Floor_BaseColor_1.of";
-connectAttr "place2dTexture2.r" "Grid_Floor_BaseColor_1.ro";
-connectAttr "place2dTexture2.n" "Grid_Floor_BaseColor_1.n";
-connectAttr "place2dTexture2.vt1" "Grid_Floor_BaseColor_1.vt1";
-connectAttr "place2dTexture2.vt2" "Grid_Floor_BaseColor_1.vt2";
-connectAttr "place2dTexture2.vt3" "Grid_Floor_BaseColor_1.vt3";
-connectAttr "place2dTexture2.vc1" "Grid_Floor_BaseColor_1.vc1";
-connectAttr "place2dTexture2.o" "Grid_Floor_BaseColor_1.uv";
-connectAttr "place2dTexture2.ofs" "Grid_Floor_BaseColor_1.fs";
 connectAttr "Greeble_Pattern_BaseColor_1.oc" "lambert4.c";
 connectAttr "lambert4.oc" "lambert4SG.ss";
 connectAttr "pCylinderShape3.iog.og[0]" "lambert4SG.dsm" -na;
@@ -5411,81 +5368,7 @@ connectAttr "groupId5.msg" "lambert4SG.gn" -na;
 connectAttr "lambert4SG.msg" "materialInfo3.sg";
 connectAttr "lambert4.msg" "materialInfo3.m";
 connectAttr "Greeble_Pattern_BaseColor_1.msg" "materialInfo3.t" -na;
-connectAttr ":defaultColorMgtGlobals.cme" "Greeble_Pattern_BaseColor_1.cme";
-connectAttr ":defaultColorMgtGlobals.cfe" "Greeble_Pattern_BaseColor_1.cmcf";
-connectAttr ":defaultColorMgtGlobals.cfp" "Greeble_Pattern_BaseColor_1.cmcp";
-connectAttr ":defaultColorMgtGlobals.wsn" "Greeble_Pattern_BaseColor_1.ws";
-connectAttr "place2dTexture3.c" "Greeble_Pattern_BaseColor_1.c";
-connectAttr "place2dTexture3.tf" "Greeble_Pattern_BaseColor_1.tf";
-connectAttr "place2dTexture3.rf" "Greeble_Pattern_BaseColor_1.rf";
-connectAttr "place2dTexture3.mu" "Greeble_Pattern_BaseColor_1.mu";
-connectAttr "place2dTexture3.mv" "Greeble_Pattern_BaseColor_1.mv";
-connectAttr "place2dTexture3.s" "Greeble_Pattern_BaseColor_1.s";
-connectAttr "place2dTexture3.wu" "Greeble_Pattern_BaseColor_1.wu";
-connectAttr "place2dTexture3.wv" "Greeble_Pattern_BaseColor_1.wv";
-connectAttr "place2dTexture3.re" "Greeble_Pattern_BaseColor_1.re";
-connectAttr "place2dTexture3.of" "Greeble_Pattern_BaseColor_1.of";
-connectAttr "place2dTexture3.r" "Greeble_Pattern_BaseColor_1.ro";
-connectAttr "place2dTexture3.n" "Greeble_Pattern_BaseColor_1.n";
-connectAttr "place2dTexture3.vt1" "Greeble_Pattern_BaseColor_1.vt1";
-connectAttr "place2dTexture3.vt2" "Greeble_Pattern_BaseColor_1.vt2";
-connectAttr "place2dTexture3.vt3" "Greeble_Pattern_BaseColor_1.vt3";
-connectAttr "place2dTexture3.vc1" "Greeble_Pattern_BaseColor_1.vc1";
-connectAttr "place2dTexture3.o" "Greeble_Pattern_BaseColor_1.uv";
-connectAttr "place2dTexture3.ofs" "Greeble_Pattern_BaseColor_1.fs";
-connectAttr ":defaultColorMgtGlobals.cme" "Dirty_Industrial_Wall_BaseColor_1.cme"
-		;
-connectAttr ":defaultColorMgtGlobals.cfe" "Dirty_Industrial_Wall_BaseColor_1.cmcf"
-		;
-connectAttr ":defaultColorMgtGlobals.cfp" "Dirty_Industrial_Wall_BaseColor_1.cmcp"
-		;
-connectAttr ":defaultColorMgtGlobals.wsn" "Dirty_Industrial_Wall_BaseColor_1.ws"
-		;
-connectAttr "place2dTexture4.c" "Dirty_Industrial_Wall_BaseColor_1.c";
-connectAttr "place2dTexture4.tf" "Dirty_Industrial_Wall_BaseColor_1.tf";
-connectAttr "place2dTexture4.rf" "Dirty_Industrial_Wall_BaseColor_1.rf";
-connectAttr "place2dTexture4.mu" "Dirty_Industrial_Wall_BaseColor_1.mu";
-connectAttr "place2dTexture4.mv" "Dirty_Industrial_Wall_BaseColor_1.mv";
-connectAttr "place2dTexture4.s" "Dirty_Industrial_Wall_BaseColor_1.s";
-connectAttr "place2dTexture4.wu" "Dirty_Industrial_Wall_BaseColor_1.wu";
-connectAttr "place2dTexture4.wv" "Dirty_Industrial_Wall_BaseColor_1.wv";
-connectAttr "place2dTexture4.re" "Dirty_Industrial_Wall_BaseColor_1.re";
-connectAttr "place2dTexture4.of" "Dirty_Industrial_Wall_BaseColor_1.of";
-connectAttr "place2dTexture4.r" "Dirty_Industrial_Wall_BaseColor_1.ro";
-connectAttr "place2dTexture4.n" "Dirty_Industrial_Wall_BaseColor_1.n";
-connectAttr "place2dTexture4.vt1" "Dirty_Industrial_Wall_BaseColor_1.vt1";
-connectAttr "place2dTexture4.vt2" "Dirty_Industrial_Wall_BaseColor_1.vt2";
-connectAttr "place2dTexture4.vt3" "Dirty_Industrial_Wall_BaseColor_1.vt3";
-connectAttr "place2dTexture4.vc1" "Dirty_Industrial_Wall_BaseColor_1.vc1";
-connectAttr "place2dTexture4.o" "Dirty_Industrial_Wall_BaseColor_1.uv";
-connectAttr "place2dTexture4.ofs" "Dirty_Industrial_Wall_BaseColor_1.fs";
-connectAttr ":defaultColorMgtGlobals.cme" "Dirty_Industrial_Wall_Emissive_1.cme"
-		;
-connectAttr ":defaultColorMgtGlobals.cfe" "Dirty_Industrial_Wall_Emissive_1.cmcf"
-		;
-connectAttr ":defaultColorMgtGlobals.cfp" "Dirty_Industrial_Wall_Emissive_1.cmcp"
-		;
-connectAttr ":defaultColorMgtGlobals.wsn" "Dirty_Industrial_Wall_Emissive_1.ws";
-connectAttr "place2dTexture5.c" "Dirty_Industrial_Wall_Emissive_1.c";
-connectAttr "place2dTexture5.tf" "Dirty_Industrial_Wall_Emissive_1.tf";
-connectAttr "place2dTexture5.rf" "Dirty_Industrial_Wall_Emissive_1.rf";
-connectAttr "place2dTexture5.mu" "Dirty_Industrial_Wall_Emissive_1.mu";
-connectAttr "place2dTexture5.mv" "Dirty_Industrial_Wall_Emissive_1.mv";
-connectAttr "place2dTexture5.s" "Dirty_Industrial_Wall_Emissive_1.s";
-connectAttr "place2dTexture5.wu" "Dirty_Industrial_Wall_Emissive_1.wu";
-connectAttr "place2dTexture5.wv" "Dirty_Industrial_Wall_Emissive_1.wv";
-connectAttr "place2dTexture5.re" "Dirty_Industrial_Wall_Emissive_1.re";
-connectAttr "place2dTexture5.of" "Dirty_Industrial_Wall_Emissive_1.of";
-connectAttr "place2dTexture5.r" "Dirty_Industrial_Wall_Emissive_1.ro";
-connectAttr "place2dTexture5.n" "Dirty_Industrial_Wall_Emissive_1.n";
-connectAttr "place2dTexture5.vt1" "Dirty_Industrial_Wall_Emissive_1.vt1";
-connectAttr "place2dTexture5.vt2" "Dirty_Industrial_Wall_Emissive_1.vt2";
-connectAttr "place2dTexture5.vt3" "Dirty_Industrial_Wall_Emissive_1.vt3";
-connectAttr "place2dTexture5.vc1" "Dirty_Industrial_Wall_Emissive_1.vc1";
-connectAttr "place2dTexture5.o" "Dirty_Industrial_Wall_Emissive_1.uv";
-connectAttr "place2dTexture5.ofs" "Dirty_Industrial_Wall_Emissive_1.fs";
 connectAttr "Dirty_Industrial_Wall_BaseColor_1.oc" "lambert5.c";
-connectAttr "Dirty_Industrial_Wall_Emissive_1.oc" "lambert5.ambc";
 connectAttr "lambert5.oc" "lambert5SG.ss";
 connectAttr "pCylinderShape2.iog.og[2]" "lambert5SG.dsm" -na;
 connectAttr "sweepShape1.iog.og[0]" "lambert5SG.dsm" -na;
@@ -5519,41 +5402,138 @@ connectAttr "polyTweakUV9.out" "groupParts6.ig";
 connectAttr "groupId15.id" "groupParts6.gi";
 connectAttr "polyTweakUV10.out" "groupParts7.ig";
 connectAttr "groupId17.id" "groupParts7.gi";
-connectAttr "lambert5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr ":defaultColorMgtGlobals.cme" "Dirty_Industrial_Wall_BaseColor_1.cme"
 		;
-connectAttr "Blue_Hexagon_Plating_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr ":defaultColorMgtGlobals.cfe" "Dirty_Industrial_Wall_BaseColor_1.cmcf"
 		;
-connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr ":defaultColorMgtGlobals.cfp" "Dirty_Industrial_Wall_BaseColor_1.cmcp"
 		;
-connectAttr "place2dTexture5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr ":defaultColorMgtGlobals.wsn" "Dirty_Industrial_Wall_BaseColor_1.ws"
 		;
-connectAttr "place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+connectAttr "place2dTexture4.c" "Dirty_Industrial_Wall_BaseColor_1.c";
+connectAttr "place2dTexture4.tf" "Dirty_Industrial_Wall_BaseColor_1.tf";
+connectAttr "place2dTexture4.rf" "Dirty_Industrial_Wall_BaseColor_1.rf";
+connectAttr "place2dTexture4.mu" "Dirty_Industrial_Wall_BaseColor_1.mu";
+connectAttr "place2dTexture4.mv" "Dirty_Industrial_Wall_BaseColor_1.mv";
+connectAttr "place2dTexture4.s" "Dirty_Industrial_Wall_BaseColor_1.s";
+connectAttr "place2dTexture4.wu" "Dirty_Industrial_Wall_BaseColor_1.wu";
+connectAttr "place2dTexture4.wv" "Dirty_Industrial_Wall_BaseColor_1.wv";
+connectAttr "place2dTexture4.re" "Dirty_Industrial_Wall_BaseColor_1.re";
+connectAttr "place2dTexture4.of" "Dirty_Industrial_Wall_BaseColor_1.of";
+connectAttr "place2dTexture4.r" "Dirty_Industrial_Wall_BaseColor_1.ro";
+connectAttr "place2dTexture4.n" "Dirty_Industrial_Wall_BaseColor_1.n";
+connectAttr "place2dTexture4.vt1" "Dirty_Industrial_Wall_BaseColor_1.vt1";
+connectAttr "place2dTexture4.vt2" "Dirty_Industrial_Wall_BaseColor_1.vt2";
+connectAttr "place2dTexture4.vt3" "Dirty_Industrial_Wall_BaseColor_1.vt3";
+connectAttr "place2dTexture4.vc1" "Dirty_Industrial_Wall_BaseColor_1.vc1";
+connectAttr "place2dTexture4.o" "Dirty_Industrial_Wall_BaseColor_1.uv";
+connectAttr "place2dTexture4.ofs" "Dirty_Industrial_Wall_BaseColor_1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Greeble_Pattern_BaseColor_1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Greeble_Pattern_BaseColor_1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Greeble_Pattern_BaseColor_1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Greeble_Pattern_BaseColor_1.ws";
+connectAttr "place2dTexture5.c" "Greeble_Pattern_BaseColor_1.c";
+connectAttr "place2dTexture5.tf" "Greeble_Pattern_BaseColor_1.tf";
+connectAttr "place2dTexture5.rf" "Greeble_Pattern_BaseColor_1.rf";
+connectAttr "place2dTexture5.mu" "Greeble_Pattern_BaseColor_1.mu";
+connectAttr "place2dTexture5.mv" "Greeble_Pattern_BaseColor_1.mv";
+connectAttr "place2dTexture5.s" "Greeble_Pattern_BaseColor_1.s";
+connectAttr "place2dTexture5.wu" "Greeble_Pattern_BaseColor_1.wu";
+connectAttr "place2dTexture5.wv" "Greeble_Pattern_BaseColor_1.wv";
+connectAttr "place2dTexture5.re" "Greeble_Pattern_BaseColor_1.re";
+connectAttr "place2dTexture5.of" "Greeble_Pattern_BaseColor_1.of";
+connectAttr "place2dTexture5.r" "Greeble_Pattern_BaseColor_1.ro";
+connectAttr "place2dTexture5.n" "Greeble_Pattern_BaseColor_1.n";
+connectAttr "place2dTexture5.vt1" "Greeble_Pattern_BaseColor_1.vt1";
+connectAttr "place2dTexture5.vt2" "Greeble_Pattern_BaseColor_1.vt2";
+connectAttr "place2dTexture5.vt3" "Greeble_Pattern_BaseColor_1.vt3";
+connectAttr "place2dTexture5.vc1" "Greeble_Pattern_BaseColor_1.vc1";
+connectAttr "place2dTexture5.o" "Greeble_Pattern_BaseColor_1.uv";
+connectAttr "place2dTexture5.ofs" "Greeble_Pattern_BaseColor_1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Blue_Hexagon_Plating_BaseColor_1.cme"
 		;
-connectAttr "Dirty_Industrial_Wall_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr ":defaultColorMgtGlobals.cfe" "Blue_Hexagon_Plating_BaseColor_1.cmcf"
 		;
-connectAttr "Grid_Floor_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr ":defaultColorMgtGlobals.cfp" "Blue_Hexagon_Plating_BaseColor_1.cmcp"
 		;
-connectAttr "lambert4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr ":defaultColorMgtGlobals.wsn" "Blue_Hexagon_Plating_BaseColor_1.ws";
+connectAttr "place2dTexture6.c" "Blue_Hexagon_Plating_BaseColor_1.c";
+connectAttr "place2dTexture6.tf" "Blue_Hexagon_Plating_BaseColor_1.tf";
+connectAttr "place2dTexture6.rf" "Blue_Hexagon_Plating_BaseColor_1.rf";
+connectAttr "place2dTexture6.mu" "Blue_Hexagon_Plating_BaseColor_1.mu";
+connectAttr "place2dTexture6.mv" "Blue_Hexagon_Plating_BaseColor_1.mv";
+connectAttr "place2dTexture6.s" "Blue_Hexagon_Plating_BaseColor_1.s";
+connectAttr "place2dTexture6.wu" "Blue_Hexagon_Plating_BaseColor_1.wu";
+connectAttr "place2dTexture6.wv" "Blue_Hexagon_Plating_BaseColor_1.wv";
+connectAttr "place2dTexture6.re" "Blue_Hexagon_Plating_BaseColor_1.re";
+connectAttr "place2dTexture6.of" "Blue_Hexagon_Plating_BaseColor_1.of";
+connectAttr "place2dTexture6.r" "Blue_Hexagon_Plating_BaseColor_1.ro";
+connectAttr "place2dTexture6.n" "Blue_Hexagon_Plating_BaseColor_1.n";
+connectAttr "place2dTexture6.vt1" "Blue_Hexagon_Plating_BaseColor_1.vt1";
+connectAttr "place2dTexture6.vt2" "Blue_Hexagon_Plating_BaseColor_1.vt2";
+connectAttr "place2dTexture6.vt3" "Blue_Hexagon_Plating_BaseColor_1.vt3";
+connectAttr "place2dTexture6.vc1" "Blue_Hexagon_Plating_BaseColor_1.vc1";
+connectAttr "place2dTexture6.o" "Blue_Hexagon_Plating_BaseColor_1.uv";
+connectAttr "place2dTexture6.ofs" "Blue_Hexagon_Plating_BaseColor_1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Grid_Floor_BaseColor_1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Grid_Floor_BaseColor_1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Grid_Floor_BaseColor_1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Grid_Floor_BaseColor_1.ws";
+connectAttr "place2dTexture7.c" "Grid_Floor_BaseColor_1.c";
+connectAttr "place2dTexture7.tf" "Grid_Floor_BaseColor_1.tf";
+connectAttr "place2dTexture7.rf" "Grid_Floor_BaseColor_1.rf";
+connectAttr "place2dTexture7.mu" "Grid_Floor_BaseColor_1.mu";
+connectAttr "place2dTexture7.mv" "Grid_Floor_BaseColor_1.mv";
+connectAttr "place2dTexture7.s" "Grid_Floor_BaseColor_1.s";
+connectAttr "place2dTexture7.wu" "Grid_Floor_BaseColor_1.wu";
+connectAttr "place2dTexture7.wv" "Grid_Floor_BaseColor_1.wv";
+connectAttr "place2dTexture7.re" "Grid_Floor_BaseColor_1.re";
+connectAttr "place2dTexture7.of" "Grid_Floor_BaseColor_1.of";
+connectAttr "place2dTexture7.r" "Grid_Floor_BaseColor_1.ro";
+connectAttr "place2dTexture7.n" "Grid_Floor_BaseColor_1.n";
+connectAttr "place2dTexture7.vt1" "Grid_Floor_BaseColor_1.vt1";
+connectAttr "place2dTexture7.vt2" "Grid_Floor_BaseColor_1.vt2";
+connectAttr "place2dTexture7.vt3" "Grid_Floor_BaseColor_1.vt3";
+connectAttr "place2dTexture7.vc1" "Grid_Floor_BaseColor_1.vc1";
+connectAttr "place2dTexture7.o" "Grid_Floor_BaseColor_1.uv";
+connectAttr "place2dTexture7.ofs" "Grid_Floor_BaseColor_1.fs";
+connectAttr ":defaultArnoldDenoiser.msg" ":defaultArnoldRenderOptions.imagers" -na
 		;
-connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
+		 -na;
+connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
+connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
+connectAttr "place2dTexture7.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+connectAttr "lambert4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "lambert2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
+connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
-connectAttr "Greeble_Pattern_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
+connectAttr "lambert2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
-connectAttr "lambert3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
+connectAttr "place2dTexture6.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "lambert3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+		;
+connectAttr "lambert5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+		;
+connectAttr "lambert5SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+		;
+connectAttr "Dirty_Industrial_Wall_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+		;
+connectAttr "place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+		;
+connectAttr "Greeble_Pattern_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
+		;
+connectAttr "Grid_Floor_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
+		;
+connectAttr "place2dTexture5.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
 		;
 connectAttr "lambert4SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[14].dn"
 		;
-connectAttr "lambert5SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[15].dn"
-		;
-connectAttr "Dirty_Industrial_Wall_Emissive_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[16].dn"
-		;
-connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[17].dn"
+connectAttr "Blue_Hexagon_Plating_BaseColor_1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[15].dn"
 		;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
@@ -5563,20 +5543,17 @@ connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert5.msg" ":defaultShaderList1.s" -na;
-connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
-connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
-connectAttr "place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture6.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture7.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "Dirty_Industrial_Wall_BaseColor_1.msg" ":defaultTextureList1.tx" -na
+		;
+connectAttr "Greeble_Pattern_BaseColor_1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Blue_Hexagon_Plating_BaseColor_1.msg" ":defaultTextureList1.tx" -na
 		;
 connectAttr "Grid_Floor_BaseColor_1.msg" ":defaultTextureList1.tx" -na;
-connectAttr "Greeble_Pattern_BaseColor_1.msg" ":defaultTextureList1.tx" -na;
-connectAttr "Dirty_Industrial_Wall_BaseColor_1.msg" ":defaultTextureList1.tx" -na
-		;
-connectAttr "Dirty_Industrial_Wall_Emissive_1.msg" ":defaultTextureList1.tx" -na
-		;
 connectAttr "sweepShape1.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape3.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "sweepShape3.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
