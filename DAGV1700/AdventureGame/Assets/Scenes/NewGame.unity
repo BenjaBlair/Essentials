@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4590785}
   - component: {fileID: 4590786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91892279}
   - component: {fileID: 91892280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -303,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111709611}
   - component: {fileID: 111709612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -390,7 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 148973941}
   - component: {fileID: 148973942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -467,6 +467,93 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &177261803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177261804}
+  - component: {fileID: 177261805}
+  m_Layer: 3
+  m_Name: Hat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177261804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177261803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.14290598, z: 0}
+  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1556368214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &177261805
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177261803}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -4039912110816036059, guid: 3c112a44cc7dc7a468f4d132c2e7611c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &212881131
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 212881133}
   - component: {fileID: 212881132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: highFloor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272253567}
   - component: {fileID: 272253568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +643,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -625,7 +712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284004532}
   - component: {fileID: 284004533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +730,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -712,7 +799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 324192748}
   - component: {fileID: 324192749}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +817,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -799,7 +886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447894692}
   - component: {fileID: 447894693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,7 +904,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -886,7 +973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502974380}
   - component: {fileID: 502974381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_78
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +991,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -973,7 +1060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514081435}
   - component: {fileID: 514081436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +1078,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1060,7 +1147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564662053}
   - component: {fileID: 564662052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: floorSpot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707067876}
   - component: {fileID: 707067877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1227,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1209,7 +1296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750151137}
   - component: {fileID: 750151138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1314,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1296,7 +1383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761132285}
   - component: {fileID: 761132286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_58 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1314,7 +1401,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1383,7 +1470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 805477927}
   - component: {fileID: 805477928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_58 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1401,7 +1488,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1470,7 +1557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812149252}
   - component: {fileID: 812149253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_75 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,7 +1575,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1557,7 +1644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881426631}
   - component: {fileID: 881426632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1575,7 +1662,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1644,7 +1731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 891038891}
   - component: {fileID: 891038892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1662,7 +1749,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1731,7 +1818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952768440}
   - component: {fileID: 952768441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1836,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1818,7 +1905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 982082466}
   - component: {fileID: 982082465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: floorSpot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1880,7 +1967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037855108}
   - component: {fileID: 1037855109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1898,7 +1985,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1967,7 +2054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069033265}
   - component: {fileID: 1069033266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1985,7 +2072,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2054,7 +2141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1143233210}
   - component: {fileID: 1143233211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,7 +2159,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2141,7 +2228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1313732186}
   - component: {fileID: 1313732187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_56 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2159,7 +2246,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2228,7 +2315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493602356}
   - component: {fileID: 1493602357}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_78 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2246,7 +2333,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2315,7 +2402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539375961}
   - component: {fileID: 1539375962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_58 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2333,7 +2420,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2402,7 +2489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553860571}
   - component: {fileID: 1553860572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_59 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,7 +2507,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2479,6 +2566,94 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1556368213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556368214}
+  - component: {fileID: 1556368215}
+  m_Layer: 3
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1556368214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556368213}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.85, y: 5.85, z: 5.85}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 177261804}
+  m_Father: {fileID: 1732030350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1556368215
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556368213}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1643563772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643563773}
   - component: {fileID: 1643563774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2507,7 +2682,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2713,7 +2888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689229158}
   - component: {fileID: 1689229159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_75 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2731,7 +2906,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2790,6 +2965,114 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1732030345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732030350}
+  - component: {fileID: 1732030349}
+  - component: {fileID: 1732030348}
+  - component: {fileID: 1732030347}
+  - component: {fileID: 1732030346}
+  m_Layer: 3
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1732030346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732030345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9914d55c3075a4b14a80c1204e72e335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key1: 100
+  key2: 97
+  direction1: 0
+  direction2: 180
+--- !u!114 &1732030347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732030345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9914d55c3075a4b14a80c1204e72e335, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key1: 275
+  key2: 276
+  direction1: 0
+  direction2: 180
+--- !u!114 &1732030348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732030345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8cbbe35153640cea23bf58a428eab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 4
+  gravity: -9.81
+--- !u!143 &1732030349
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732030345}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.37
+  m_Radius: 0.56
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: -0.18, z: 0}
+--- !u!4 &1732030350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732030345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1556368214}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751703475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,7 +3083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751703476}
   - component: {fileID: 1751703477}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2818,7 +3101,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2887,7 +3170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799488069}
   - component: {fileID: 1799488070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2905,7 +3188,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2974,7 +3257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823350979}
   - component: {fileID: 1823350980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_56 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2992,7 +3275,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212881133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3062,7 +3345,7 @@ GameObject:
   - component: {fileID: 1837440685}
   - component: {fileID: 1837440684}
   - component: {fileID: 1837440683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3156,7 +3439,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.9999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3170,7 +3453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840114967}
   - component: {fileID: 1840114968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3188,7 +3471,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3257,7 +3540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921249185}
   - component: {fileID: 1921249184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: highFloor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3318,7 +3601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1949591796}
   - component: {fileID: 1949591797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3336,7 +3619,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 564662053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3405,7 +3688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1982947561}
   - component: {fileID: 1982947562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_57 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3423,7 +3706,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1921249185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3492,7 +3775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2006659711}
   - component: {fileID: 2006659712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16) 1_56 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3510,7 +3793,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 982082466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3579,3 +3862,4 @@ SceneRoots:
   - {fileID: 212881133}
   - {fileID: 982082466}
   - {fileID: 564662053}
+  - {fileID: 1732030350}
