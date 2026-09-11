@@ -2576,7 +2576,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -8017,7 +8017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 3.5
-  gravity: -9.81
+  gravity: -19
 --- !u!143 &1732030349
 CharacterController:
   m_ObjectHideFlags: 0
