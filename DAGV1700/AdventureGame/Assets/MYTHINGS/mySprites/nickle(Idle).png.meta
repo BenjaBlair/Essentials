@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: e20daa69f8cbe54458735006fc0fd922
+guid: eca1ef1b090c1174a88d1d3536c69c94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8040914208010828445
-    second: nickleMovementIdle_0
+      213: 3257437231748839227
+    second: nickle(Idle)_0
   - first:
-      213: -1369570230814852226
-    second: nickleMovementIdle_1
+      213: 3382450787804964584
+    second: nickle(Idle)_1
   - first:
-      213: 3375155714762677442
-    second: nickleMovementIdle_2
+      213: 9085846921393415475
+    second: nickle(Idle)_2
   - first:
-      213: 700084718103147841
-    second: nickleMovementIdle_3
+      213: 654082734865102529
+    second: nickle(Idle)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,11 +109,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nickleMovementIdle_0
+      name: nickle(Idle)_0
       rect:
         serializedVersion: 2
-        x: 455
-        y: 545
+        x: 16
+        y: 23
         width: 210
         height: 469
       alignment: 0
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3658f12612fe86090800000000000000
-      internalID: -8040914208010828445
+      spriteID: b37758457edb43d20800000000000000
+      internalID: 3257437231748839227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nickleMovementIdle_1
+      name: nickle(Idle)_1
       rect:
         serializedVersion: 2
-        x: 721
-        y: 541
+        x: 258
+        y: 24
         width: 210
-        height: 469
+        height: 470
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7bb451a12f4efce0800000000000000
-      internalID: -1369570230814852226
+      spriteID: 8e6ea5d0211e0fe20800000000000000
+      internalID: 3382450787804964584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nickleMovementIdle_2
+      name: nickle(Idle)_2
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 540
-        width: 210
-        height: 469
+        x: 497
+        y: 25
+        width: 224
+        height: 472
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cc1f008d36f6de20800000000000000
-      internalID: 3375155714762677442
+      spriteID: 3352b39d2a9671e70800000000000000
+      internalID: 9085846921393415475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nickleMovementIdle_3
+      name: nickle(Idle)_3
       rect:
         serializedVersion: 2
-        x: 1268
-        y: 532
+        x: 751
+        y: 26
         width: 210
-        height: 469
+        height: 470
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145b737875337b900800000000000000
-      internalID: 700084718103147841
+      spriteID: 1c6b95928c4c31900800000000000000
+      internalID: 654082734865102529
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6510f90f59ab85043849d87243b6fa4f
+    spriteID: 62d9c00be4d961446b02782111da573f
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nickleMovementIdle_0: -8040914208010828445
-      nickleMovementIdle_1: -1369570230814852226
-      nickleMovementIdle_2: 3375155714762677442
-      nickleMovementIdle_3: 700084718103147841
+      nickle(Idle)_0: 3257437231748839227
+      nickle(Idle)_1: 3382450787804964584
+      nickle(Idle)_2: 9085846921393415475
+      nickle(Idle)_3: 654082734865102529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

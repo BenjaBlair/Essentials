@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 77cdc01cdbcb4a249b873c23d40af68b
+guid: c03c55409319bb746a70a8efd6bec1af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5328816699687936656
-    second: nickleMovementWalk_0
+      213: 4647394822737361927
+    second: nickle(Walking)_0
   - first:
-      213: -3896533241707746627
-    second: nickleMovementWalk_1
+      213: -2701098712082078869
+    second: nickle(Walking)_1
   - first:
-      213: -756287877268094463
-    second: nickleMovementWalk_2
+      213: 6321284419541034847
+    second: nickle(Walking)_2
   - first:
-      213: -5931824263067967786
-    second: nickleMovementWalk_3
+      213: 8334801671064281849
+    second: nickle(Walking)_3
   - first:
-      213: 9015858183244898588
-    second: nickleMovementWalk_4
+      213: 1781740398309650057
+    second: nickle(Walking)_4
+  - first:
+      213: 5287769861033251204
+    second: nickle(Walking)_5
+  - first:
+      213: -3197715680510007545
+    second: nickle(Walking)_6
+  - first:
+      213: 400832273877471419
+    second: nickle(Walking)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,111 +121,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nickleMovementWalk_0
+      name: nickle(Walking)_0
       rect:
         serializedVersion: 2
         x: 194
         y: 1050
+        width: 227
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cff34e7fcde7040800000000000000
+      internalID: 4647394822737361927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nickle(Walking)_1
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1047
         width: 236
-        height: 477
+        height: 463
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07d5ee5e17d3c06b0800000000000000
-      internalID: -5328816699687936656
+      spriteID: b63251b4805c38ad0800000000000000
+      internalID: -2701098712082078869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nickleMovementWalk_1
+      name: nickle(Walking)_2
       rect:
         serializedVersion: 2
-        x: 454
-        y: 1049
-        width: 251
-        height: 477
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dba228059abbce9c0800000000000000
-      internalID: -3896533241707746627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nickleMovementWalk_2
-      rect:
-        serializedVersion: 2
-        x: 717
+        x: 728
         y: 1051
-        width: 236
-        height: 477
+        width: 212
+        height: 465
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 102408fbe202185f0800000000000000
-      internalID: -756287877268094463
+      spriteID: f5764fe10b6b9b750800000000000000
+      internalID: 6321284419541034847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nickleMovementWalk_3
+      name: nickle(Walking)_3
       rect:
         serializedVersion: 2
-        x: 964
+        x: 973
         y: 1050
-        width: 236
+        width: 212
         height: 477
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6de5ac9c24dedada0800000000000000
-      internalID: -5931824263067967786
+      spriteID: 9f26e1dc5f92ba370800000000000000
+      internalID: 8334801671064281849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nickleMovementWalk_4
+      name: nickle(Walking)_4
       rect:
         serializedVersion: 2
         x: 1216
         y: 1051
-        width: 236
-        height: 477
+        width: 230
+        height: 461
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c116c95ef33ce1d70800000000000000
-      internalID: 9015858183244898588
+      spriteID: 98ea533c3730ab810800000000000000
+      internalID: 1781740398309650057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nickle(Walking)_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 554
+        width: 222
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48157ec3caee16940800000000000000
+      internalID: 5287769861033251204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nickle(Walking)_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 557
+        width: 212
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7072182e78e6f93d0800000000000000
+      internalID: -3197715680510007545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nickle(Walking)_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 556
+        width: 212
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb09af254da009500800000000000000
+      internalID: 400832273877471419
       vertices: []
       indices: 
       edges: []
@@ -225,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a4b086cf89e95a14c83312c8c79e172c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nickleMovementWalk_0: -5328816699687936656
-      nickleMovementWalk_1: -3896533241707746627
-      nickleMovementWalk_2: -756287877268094463
-      nickleMovementWalk_3: -5931824263067967786
-      nickleMovementWalk_4: 9015858183244898588
+      nickle(Walking)_0: 4647394822737361927
+      nickle(Walking)_1: -2701098712082078869
+      nickle(Walking)_2: 6321284419541034847
+      nickle(Walking)_3: 8334801671064281849
+      nickle(Walking)_4: 1781740398309650057
+      nickle(Walking)_5: 5287769861033251204
+      nickle(Walking)_6: -3197715680510007545
+      nickle(Walking)_7: 400832273877471419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
