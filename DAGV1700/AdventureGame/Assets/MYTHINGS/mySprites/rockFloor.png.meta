@@ -103,37 +103,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rockFloor_0
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 413
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2900b97a551e5a40800000000000000
-      internalID: 5358744084950288685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: rockFloor_1
       rect:
         serializedVersion: 2
         x: 5
-        y: 133
-        width: 622
-        height: 262
+        y: 130
+        width: 625
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f3af7f07d636803448ecb07b31f0bf4f
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +137,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rockFloor_0: -112389327
+      rockFloor_2: 2133114213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

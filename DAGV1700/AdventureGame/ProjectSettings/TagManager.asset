@@ -41,5 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Level
+    uniqueID: 1755389049
+    locked: 0
+  - name: Player
+    uniqueID: 3083585555
+    locked: 0
+  - name: Interactables
+    uniqueID: 777041533
+    locked: 0
   m_RenderingLayers:
   - Default
