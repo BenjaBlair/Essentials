@@ -97,4 +97,13 @@ public class myPlayerController : MonoBehaviour
             transform.position = pos;
         }
     }
+
+    public void ApplyPlatformMovement(Vector3 motion)
+    {
+        CharacterController controller = GetComponent<CharacterController>();
+        if (controller != null)
+        {
+            controller.Move(motion);
+        }
+    }
 }
