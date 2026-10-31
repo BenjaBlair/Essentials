@@ -140,21 +140,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 5783626728774174daed5d7d8c3665da, type: 2}
-        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
-        m_MethodName: set_Value
-        m_Mode: 4
+      - m_Target: {fileID: 11400000, guid: 8620cff1a96e11d49b46912f6d89ddec, type: 2}
+        m_TargetAssemblyTypeName: mySimpleIntData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
+          m_IntArgument: 1
           m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: sliderHealth, Assembly-CSharp
-        m_MethodName: UpdateWithFloatData
+        m_TargetAssemblyTypeName: ScoreUpdater, Assembly-CSharp
+        m_MethodName: ShowNewScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

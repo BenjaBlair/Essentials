@@ -4,11 +4,14 @@ public class playerAnims : MonoBehaviour
 {
     public Animator anim;
     public myPlayerController player;
+
+    private bool hasJumped = false;
     
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !hasJumped)
         {
+            hasJumped = true;
             anim.SetTrigger("jump");
         }
 
@@ -17,5 +20,8 @@ public class playerAnims : MonoBehaviour
 
         anim.SetBool("run", isMoving && isGrounded);
         anim.SetBool("fall", !isGrounded);
+
+        if (isGrounded) hasJumped = false;
+        else hasJumped = true;
     }
 }
